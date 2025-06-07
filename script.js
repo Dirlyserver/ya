@@ -26,7 +26,7 @@ controls.enableDamping = true;
 
 // Load Buku
 const loader = new GLTFLoader();
-loader.load('book_model.glb', (gltf) => {
+loader.load('/book_model.glb', (gltf) => {
   scene.add(gltf.scene);
 }, undefined, (error) => {
   console.error('Error loading model:', error);
